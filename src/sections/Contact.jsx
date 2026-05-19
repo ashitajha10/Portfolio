@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, FileText, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Mail, Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Github, Linkedin } from '../components/Icons';
 
 export default function Contact() {
@@ -101,9 +101,9 @@ export default function Contact() {
       {/* Main Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
-        {/* Left Side: Contact Information & Resume Download */}
+        {/* Left Side: Contact Information */}
         <motion.div
-          className="lg:col-span-5 flex flex-col justify-between"
+          className="lg:col-span-5"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -174,23 +174,6 @@ export default function Contact() {
                 </div>
               </a>
             </div>
-          </div>
-
-          {/* Download Resume Button */}
-          <div className="pt-10 lg:pt-0">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Resume download triggered! (Placeholder file link)');
-              }}
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl glass-card border border-blush-pink/40 hover:border-blush-pink/80 dark:border-soft-mauve/25 dark:hover:border-soft-mauve/60 text-[#4B4453] dark:text-gray-200 hover:bg-[#FFD9E8]/20 dark:hover:bg-soft-mauve/10 hover:-translate-y-0.5 transition-all shadow-sm"
-            >
-              <FileText size={16} />
-              <span className="font-nunito text-sm font-bold tracking-wide">
-                Download Resume (PDF)
-              </span>
-            </a>
           </div>
         </motion.div>
 

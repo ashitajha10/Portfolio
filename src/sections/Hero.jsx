@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail, Sparkles, FileText } from 'lucide-react';
 import { Github, Linkedin } from '../components/Icons';
 
 export default function Hero() {
@@ -121,12 +121,14 @@ export default function Hero() {
             <ArrowRight size={16} />
           </button>
 
-          <button
-            onClick={() => handleScrollTo('contact')}
-            className="w-full sm:w-auto px-8 py-3.5 rounded-full font-nunito font-bold text-sm tracking-wide text-text-light dark:text-gray-200 glass-card hover:bg-blush-pink/20 dark:hover:bg-soft-mauve/20 hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
+          <a
+            href="/Ashita_Resume.pdf"
+            download="Ashita_Resume.pdf"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full font-nunito font-bold text-sm tracking-wide text-text-light dark:text-gray-200 glass-card hover:bg-blush-pink/20 dark:hover:bg-soft-mauve/20 hover:-translate-y-0.5 transition-all duration-300 shadow-sm flex items-center justify-center gap-2"
           >
-            Contact Me
-          </button>
+            <FileText size={16} />
+            <span>Download Resume</span>
+          </a>
         </motion.div>
 
 
