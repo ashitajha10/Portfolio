@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-blush-pink: #D8869E;    /* Deeper rose pink (love/aisha) */
+  --color-pastel-pink: #FADAE9;   /* Very light pink pill background */
+  --color-rose-beige: #FDF4F7;    /* Soft pinkish-white base background */
+  --color-lavender-tint: #F3E1F4; /* Very light purple pill background */
+  --color-cream-white: #FFFFFF;   /* Solid white for cards */
+  --color-soft-mauve: #B29AC7;    /* Purple text (with/.dev) */
+  --color-text-dark: #423A48;     /* Plum-grey for main headings */
+  --color-text-light: #6D6176;    /* Lighter plum-grey for body text */
+  
+  --font-poppins: 'Poppins', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Custom CSS Scrollbar & Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF4F7;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1A1625;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D76B86;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BA82A5;
+}
+
+/* Glassmorphism card helpers */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 40px -10px rgba(220, 190, 205, 0.4);
+}
+
+.dark .glass-card {
+  background: rgba(40, 35, 50, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Glowing text and buttons */
+.pastel-glow {
+  text-shadow: 0 0 20px rgba(215, 107, 134, 0.6);
+}
+
+.dark .pastel-glow {
+  text-shadow: 0 0 20px rgba(186, 130, 165, 0.4);
+}
+
+/* Base Body Styles */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
