@@ -129,37 +129,7 @@ export default function Hero() {
           </button>
         </motion.div>
 
-        {/* Social Links */}
-        <motion.div
-          variants={itemVariants}
-          className="flex items-center gap-5"
-        >
-          <a
-            href="https://github.com/ashitajha10"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full glass-card hover:scale-110 text-text-light hover:text-text-dark dark:text-gray-300 dark:hover:text-white transition-all duration-300 shadow-sm"
-            aria-label="GitHub"
-          >
-            <Github size={20} />
-          </a>
-          <a
-            href="https://linkedin.com/in/ashitajha"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full glass-card hover:scale-110 text-text-light hover:text-text-dark dark:text-gray-300 dark:hover:text-white transition-all duration-300 shadow-sm"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="mailto:ashitajha10@gmail.com"
-            className="p-3 rounded-full glass-card hover:scale-110 text-text-light hover:text-text-dark dark:text-gray-300 dark:hover:text-white transition-all duration-300 shadow-sm"
-            aria-label="Email"
-          >
-            <Mail size={20} />
-          </a>
-        </motion.div>
+
       </motion.div>
 
       {/* Floating Animated Scroll Down Indicator */}
