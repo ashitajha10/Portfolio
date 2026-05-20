@@ -116,12 +116,6 @@ function ProjectThumbnail({ project }) {
         />
       )}
 
-      {/* Elegant Glassmorphic Corner Badge for Icon - visible only when image is loaded */}
-      {isLoaded && !hasError && (
-        <div className="absolute top-3 right-3 p-2 rounded-xl bg-white/70 dark:bg-[#1E1B24]/80 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-sm z-10 transition-transform duration-300 group-hover:scale-110">
-          {React.cloneElement(project.icon, { size: 18 })}
-        </div>
-      )}
 
       {/* Glowing Highlight */}
       <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-white/30 blur-2xl group-hover:scale-150 transition-all duration-500" />
