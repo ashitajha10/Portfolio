@@ -1,7 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Sparkles, FileText } from 'lucide-react';
-import { Github, Linkedin } from '../components/Icons';
+import { ArrowRight, Sparkles, FileText } from 'lucide-react';
 
 export default function Hero() {
   const containerVariants = {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from './components/ThemeContext';
 import Loader from './components/Loader';
 import Background from './components/Background';

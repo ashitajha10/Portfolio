@@ -1,25 +1,8 @@
-import React from 'react';
 import { Mail, Heart } from 'lucide-react';
 import { Github, Linkedin } from './Icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const handleNavClick = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-  };
 
   return (
     <footer className="w-full relative mt-20 pb-12 z-10 px-4 sm:px-6 lg:px-8">

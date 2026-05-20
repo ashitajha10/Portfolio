@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Cpu, Layout, Users, MessageSquare } from 'lucide-react';
 import { Github } from '../components/Icons';

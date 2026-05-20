@@ -1,33 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Cpu, Award, Briefcase, Heart, BookOpen } from 'lucide-react';
-
-const STATS = [
-  {
-    icon: <Code className="text-blush-pink" size={24} />,
-    value: '15+',
-    label: 'Projects Built',
-    desc: 'Web apps, models, utilities',
-  },
-  {
-    icon: <Cpu className="text-soft-mauve" size={24} />,
-    value: '12+',
-    label: 'Technologies',
-    desc: 'Languages, frameworks, tools',
-  },
-  {
-    icon: <Award className="text-[#EADCF8] dark:text-soft-mauve" size={24} />,
-    value: '6+',
-    label: 'Certifications',
-    desc: 'ML, Deep Learning, Cloud',
-  },
-  {
-    icon: <Briefcase className="text-blush-pink" size={24} />,
-    value: '1+',
-    label: 'Years Exp',
-    desc: 'Research, internships, freelance',
-  },
-];
+import { Code } from 'lucide-react';
 
 const SKILLS = [
   "C++", "Python", "JavaScript", "Java",

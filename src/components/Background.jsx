@@ -1,15 +1,23 @@
-import React from 'react';
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Background() {
-  // Generate random positions for subtle sparkles/stars
-  const sparkles = Array.from({ length: 20 }, (_, i) => ({
-    id: i,
-    top: `${Math.random() * 100}%`,
-    left: `${Math.random() * 100}%`,
-    delay: Math.random() * 5,
-    size: Math.random() * 4 + 2,
-  }));
+  // Generate random positions for subtle sparkles/stars once on mount
+  const sparkles = useMemo(() => {
+    return Array.from({ length: 20 }, (_, i) => ({
+      id: i,
+      // eslint-disable-next-line react-hooks/purity
+      top: `${Math.random() * 100}%`,
+      // eslint-disable-next-line react-hooks/purity
+      left: `${Math.random() * 100}%`,
+      // eslint-disable-next-line react-hooks/purity
+      delay: Math.random() * 5,
+      // eslint-disable-next-line react-hooks/purity
+      size: Math.random() * 4 + 2,
+      // eslint-disable-next-line react-hooks/purity
+      duration: Math.random() * 3 + 2,
+    }));
+  }, []);
 
   return (
     <div className="fixed inset-0 -z-50 w-full h-full overflow-hidden bg-rose-beige dark:bg-[#130F1A] transition-colors duration-500">
@@ -93,7 +101,7 @@ export default function Background() {
               scale: [0.8, 1.2, 0.8],
             }}
             transition={{
-              duration: Math.random() * 3 + 2,
+              duration: sparkle.duration,
               repeat: Infinity,
               delay: sparkle.delay,
               ease: 'easeInOut',
