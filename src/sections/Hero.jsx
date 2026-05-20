@@ -123,7 +123,8 @@ export default function Hero() {
 
           <a
             href="/Ashita_Resume.pdf"
-            download="Ashita_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-3.5 rounded-full font-nunito font-bold text-sm tracking-wide text-text-light dark:text-gray-200 glass-card hover:bg-blush-pink/20 dark:hover:bg-soft-mauve/20 hover:-translate-y-0.5 transition-all duration-300 shadow-sm flex items-center justify-center gap-2"
           >
             <FileText size={16} />

@@ -14,6 +14,7 @@ const PROJECTS = [
     demoLink: 'https://dementia-detector-hnewlxbymq3b5dw6neqg2f.streamlit.app/',
     icon: <Cpu className="text-blush-pink" size={32} />,
     gradient: 'from-[#FFD9E8] to-[#EADCF8]',
+    image: '/projects/dementia-detector.png',
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const PROJECTS = [
     demoLink: 'https://cohive-ecru.vercel.app/',
     icon: <Users className="text-soft-mauve" size={32} />,
     gradient: 'from-[#EADCF8] to-[#F8C8DC]',
+    image: '/projects/cohive.png',
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const PROJECTS = [
     demoLink: 'https://skillsync-ai-50ws.onrender.com/',
     icon: <MessageSquare className="text-blush-pink" size={32} />,
     gradient: 'from-[#FFD9E8] to-[#F6E6E9]',
+    image: '/projects/skillsync-ai.png',
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ const PROJECTS = [
     demoLink: 'https://ashitajha10.github.io/Weather-App/',
     icon: <Layout className="text-[#7D6B78] dark:text-soft-mauve" size={32} />,
     gradient: 'from-[#F6E6E9] to-[#EADCF8]',
+    image: '/projects/weather-app.png',
   },
   {
     id: 5,
@@ -58,6 +62,7 @@ const PROJECTS = [
     demoLink: 'https://currency-converter-self-chi.vercel.app/',
     icon: <Layout className="text-[#7D6B78] dark:text-soft-mauve" size={32} />,
     gradient: 'from-[#F6E6E9] to-[#EADCF8]',
+    image: '/projects/currency-converter.png',
   },
   {
     id: 6,
@@ -69,8 +74,8 @@ const PROJECTS = [
     demoLink: 'https://ashitajha10.github.io/Spotify-Clone/',
     icon: <Layout className="text-[#7D6B78] dark:text-soft-mauve" size={32} />,
     gradient: 'from-[#F6E6E9] to-[#EADCF8]',
+    image: '/projects/spotify-clone.png',
   },
-
 ];
 
 const FILTER_ITEMS = [
@@ -79,6 +84,50 @@ const FILTER_ITEMS = [
   { id: 'ml', label: 'Machine Learning' },
   { id: 'collab', label: 'Collaborative' },
 ];
+
+function ProjectThumbnail({ project }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <div className={`h-48 w-full bg-gradient-to-br ${project.gradient} relative overflow-hidden flex items-center justify-center`}>
+      {/* Fallback/Underlay Graphic Elements */}
+      <div className="absolute inset-0 bg-white/20 dark:bg-black/10 backdrop-blur-[1px]" />
+      
+      {/* Central Icon - fades out once image is loaded */}
+      <div
+        className={`p-6 rounded-2xl bg-white/60 dark:bg-[#1E1B24]/80 shadow-md relative z-10 transition-all duration-500 ${
+          isLoaded && !hasError ? 'opacity-0 scale-75 pointer-events-none' : 'opacity-100 scale-100'
+        }`}
+      >
+        {project.icon}
+      </div>
+
+      {/* Main Screenshot Image */}
+      {project.image && !hasError && (
+        <img
+          src={project.image}
+          alt={project.title}
+          onError={() => setHasError(true)}
+          onLoad={() => setIsLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-in-out ${
+            isLoaded ? 'opacity-100' : 'opacity-0'
+          } group-hover:scale-105`}
+        />
+      )}
+
+      {/* Elegant Glassmorphic Corner Badge for Icon - visible only when image is loaded */}
+      {isLoaded && !hasError && (
+        <div className="absolute top-3 right-3 p-2 rounded-xl bg-white/70 dark:bg-[#1E1B24]/80 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-sm z-10 transition-transform duration-300 group-hover:scale-110">
+          {React.cloneElement(project.icon, { size: 18 })}
+        </div>
+      )}
+
+      {/* Glowing Highlight */}
+      <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-white/30 blur-2xl group-hover:scale-150 transition-all duration-500" />
+    </div>
+  );
+}
 
 export default function Projects() {
   const [filter, setFilter] = useState('all');
@@ -149,20 +198,7 @@ export default function Projects() {
               className="glass-card rounded-3xl overflow-hidden shadow-sm hover:shadow-lg border border-blush-pink/30 hover:border-blush-pink/60 dark:hover:border-soft-mauve/40 transition-all duration-300 group flex flex-col h-full"
             >
               {/* Thumbnail Area */}
-              <div className={`h-48 w-full bg-gradient-to-br ${project.gradient} relative overflow-hidden flex items-center justify-center`}>
-                {/* Floating graphic elements */}
-                <div className="absolute inset-0 bg-white/20 dark:bg-black/10 backdrop-blur-[1px]" />
-                <motion.div
-                  className="p-6 rounded-2xl bg-white/60 dark:bg-[#1E1B24]/80 shadow-md relative z-10"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  {project.icon}
-                </motion.div>
-
-                {/* Glowing Highlight */}
-                <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-white/30 blur-2xl group-hover:scale-150 transition-all duration-500" />
-              </div>
+              <ProjectThumbnail project={project} />
 
               {/* Details Area */}
               <div className="p-6 flex flex-col justify-between flex-grow">
