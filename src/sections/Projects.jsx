@@ -8,7 +8,7 @@ const PROJECTS = [
     id: 1,
     title: 'Dementia Detection System',
     category: 'ml',
-    desc: 'An ensemble machine learning app classifying stages of cognitive decline using multimodal feature models.',
+    desc: 'An early dementia detection system built using ensemble machine learning models to accurately classify subjects into dementia and control groups for predictive healthcare analysis.',
     tech: ['Python', 'Scikit-learn', 'SVM', 'Pandas', 'Streamlit'],
     gitLink: 'https://github.com/ashitajha10/dementia-detector',
     demoLink: 'https://dementia-detector-hnewlxbymq3b5dw6neqg2f.streamlit.app/',
