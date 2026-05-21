@@ -68,7 +68,7 @@ const PROJECTS = [
     id: 6,
     title: 'Music Player UI',
     category: 'web',
-    desc: 'A fully responsive Spotify Web Player clone built with HTML and CSS, recreating the platform’s sleek interface and immersive music streaming experience.',
+    desc: 'A music streaming web interface using HTML and CSS, focusing on modern UI design and layout styling.',
     tech: ['HTML5', 'CSS3'],
     gitLink: 'https://github.com/ashitajha10/Music-Player-UI',
     demoLink: 'https://ashitajha10.github.io/Music-Player-UI/',
