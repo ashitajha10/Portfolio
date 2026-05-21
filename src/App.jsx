@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Projects from './sections/Projects';
+import Blogs from './sections/Blogs';
 import Contact from './sections/Contact';
 
 function AppContent() {
@@ -27,6 +28,7 @@ function AppContent() {
         <Hero />
         <About />
         <Projects />
+        <Blogs />
         <Contact />
       </main>
 

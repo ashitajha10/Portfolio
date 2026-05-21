@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Code } from 'lucide-react';
 
@@ -9,6 +10,23 @@ const SKILLS = [
   "MongoDB", "MySQL",
   "Git", "GitHub", "Figma", "Canva", "Streamlit"
 ];
+
+function ProfileImage() {
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <img
+      src={hasError ? 'https://ui-avatars.com/api/?name=Ashita+Jha&background=FADAE9&color=D8869E&size=400' : '/photo.jpg'}
+      alt="Ashita Jha"
+      className={`w-full h-full object-cover object-center transition-transform duration-500 ${
+        hasError
+          ? 'scale-100 translate-x-0' // centered fallback avatar
+          : 'origin-center scale-[1.8] translate-x-4 hover:scale-[1.9]' // real photo crop
+      }`}
+      onError={() => setHasError(true)}
+    />
+  );
+}
 
 export default function About() {
   const scrollVariants = {
@@ -58,15 +76,8 @@ export default function About() {
         >
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full p-2 glass-card mx-auto lg:mx-0">
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-white/50 relative bg-blush-pink/10">
-              {/* Profile Image (Will fallback to placeholder if not found) */}
-              <img
-                src="/photo.jpg"
-                alt="Ashita Jha"
-                className="w-full h-full object-cover object-center origin-center scale-[1.8] translate-x-4 transition-transform duration-500 hover:scale-[1.9]"
-                onError={(e) => {
-                  e.target.src = 'https://ui-avatars.com/api/?name=Ashita+Jha&background=FADAE9&color=D8869E&size=400';
-                }}
-              />
+              {/* Profile Image (Will fallback to centered avatar placeholder if not found) */}
+              <ProfileImage />
             </div>
             {/* Decorative Ambient Glow */}
             <div className="absolute -inset-4 bg-gradient-to-r from-blush-pink to-soft-mauve rounded-full blur-2xl opacity-30 -z-10 animate-pulse-slow"></div>

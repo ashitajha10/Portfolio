@@ -131,7 +131,7 @@ export default function Contact() {
                     Email Me
                   </p>
                   <p className="font-nunito text-sm text-[#4B4453] dark:text-gray-200 font-semibold group-hover:underline">
-                    ashitajha691@gmail.com
+                    ashitajha10@gmail.com
                   </p>
                 </div>
               </a>
