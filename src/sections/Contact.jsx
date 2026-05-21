@@ -120,7 +120,7 @@ export default function Contact() {
             {/* Visual Quick Contact Links */}
             <div className="space-y-4 pt-6">
               <a
-                href="mailto:ashitajha10@gmail.com"
+                href="mailto:ashitajha691@gmail.com"
                 className="flex items-center gap-4 group cursor-pointer"
               >
                 <div className="p-3 rounded-2xl glass-card text-blush-pink group-hover:scale-110 transition-transform">
@@ -131,7 +131,7 @@ export default function Contact() {
                     Email Me
                   </p>
                   <p className="font-nunito text-sm text-[#4B4453] dark:text-gray-200 font-semibold group-hover:underline">
-                    ashitajha10@gmail.com
+                    ashitajha691@gmail.com
                   </p>
                 </div>
               </a>
