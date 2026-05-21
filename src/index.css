@@ -4,39 +4,28 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-blush-pink: #D8869E;
-  /* Deeper rose pink (love/aisha) */
-  --color-pastel-pink: #FADAE9;
-  /* Very light pink pill background */
-  --color-rose-beige: #FDF4F7;
-  /* Soft pinkish-white base background */
-  --color-lavender-tint: #F3E1F4;
-  /* Very light purple pill background */
-  --color-cream-white: #FFFFFF;
-  /* Solid white for cards */
-  --color-soft-mauve: #B29AC7;
-  /* Purple text (with/.dev) */
-  --color-text-dark: #423A48;
-  /* Plum-grey for main headings */
-  --color-text-light: #6D6176;
-  /* Lighter plum-grey for body text */
-
+  --color-blush-pink: #D8869E;    /* Deeper rose pink (love/aisha) */
+  --color-pastel-pink: #FADAE9;   /* Very light pink pill background */
+  --color-rose-beige: #FDF4F7;    /* Soft pinkish-white base background */
+  --color-lavender-tint: #F3E1F4; /* Very light purple pill background */
+  --color-cream-white: #FFFFFF;   /* Solid white for cards */
+  --color-soft-mauve: #B29AC7;    /* Purple text (with/.dev) */
+  --color-text-dark: #423A48;     /* Plum-grey for main headings */
+  --color-text-light: #6D6176;    /* Lighter plum-grey for body text */
+  
   --font-poppins: 'Poppins', sans-serif;
   --font-outfit: 'Outfit', sans-serif;
   --font-nunito: 'Nunito', sans-serif;
   --font-sora: 'Sora', sans-serif;
-
+  
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-slow: float 9s ease-in-out infinite;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
+  
   @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
       transform: translateY(0px);
     }
-
     50% {
       transform: translateY(-10px);
     }

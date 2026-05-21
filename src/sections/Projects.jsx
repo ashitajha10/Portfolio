@@ -66,15 +66,15 @@ const PROJECTS = [
   },
   {
     id: 6,
-    title: 'Spotify Clone',
+    title: 'Music Player UI',
     category: 'web',
     desc: 'A fully responsive Spotify Web Player clone built with HTML and CSS, recreating the platform’s sleek interface and immersive music streaming experience.',
     tech: ['HTML5', 'CSS3'],
-    gitLink: 'https://github.com/ashitajha10/Spotify-Clone',
-    demoLink: 'https://ashitajha10.github.io/Spotify-Clone/',
+    gitLink: 'https://github.com/ashitajha10/Music-Player-UI',
+    demoLink: 'https://ashitajha10.github.io/Music-Player-UI/',
     icon: <Layout className="text-[#7D6B78] dark:text-soft-mauve" size={32} />,
     gradient: 'from-[#F6E6E9] to-[#EADCF8]',
-    image: '/projects/spotify-clone.png',
+    image: '/projects/music-player-ui.png',
   },
 ];
 
@@ -93,12 +93,11 @@ function ProjectThumbnail({ project }) {
     <div className={`h-48 w-full bg-gradient-to-br ${project.gradient} relative overflow-hidden flex items-center justify-center`}>
       {/* Fallback/Underlay Graphic Elements */}
       <div className="absolute inset-0 bg-white/20 dark:bg-black/10 backdrop-blur-[1px]" />
-      
+
       {/* Central Icon - fades out once image is loaded */}
       <div
-        className={`p-6 rounded-2xl bg-white/60 dark:bg-[#1E1B24]/80 shadow-md relative z-10 transition-all duration-500 ${
-          isLoaded && !hasError ? 'opacity-0 scale-75 pointer-events-none' : 'opacity-100 scale-100'
-        }`}
+        className={`p-6 rounded-2xl bg-white/60 dark:bg-[#1E1B24]/80 shadow-md relative z-10 transition-all duration-500 ${isLoaded && !hasError ? 'opacity-0 scale-75 pointer-events-none' : 'opacity-100 scale-100'
+          }`}
       >
         {project.icon}
       </div>
@@ -110,9 +109,8 @@ function ProjectThumbnail({ project }) {
           alt={project.title}
           onError={() => setHasError(true)}
           onLoad={() => setIsLoaded(true)}
-          className={`absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-in-out ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          } group-hover:scale-105`}
+          className={`absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'
+            } group-hover:scale-105`}
         />
       )}
 
