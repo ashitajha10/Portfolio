@@ -20,7 +20,7 @@ const PROJECTS = [
     id: 2,
     title: 'Cohive Collaboration Platform',
     category: 'web-collab',
-    desc: 'A real-time team collaboration platform offering document editors, WebRTC video calling rooms, and kanban boards.',
+    desc: 'A real-time collaboration platform with WebRTC video calls, live chat, collaborative whiteboard, and Google OAuth authentication using React, Node.js, Socket.IO, and MongoDB.',
     tech: ['React', 'Node.js', 'Express', 'Socket.io', 'WebRTC', 'Tailwind', 'MongoDB'],
     gitLink: 'https://github.com/ashitajha10/Cohive',
     demoLink: 'https://cohive-ecru.vercel.app/',
