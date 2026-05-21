@@ -31,7 +31,7 @@ This website has been built from scratch to combine technical depth, clean inter
 ## 📁 Repository Structure
 
 ```
-Portfolio/
+ashitajha10.github.io/
 ├── public/                 # Static assets (images, icons, resumes)
 │   └── projects/           # Screenshots of featured creations
 ├── src/
@@ -71,8 +71,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ashitajha10/Portfolio.git
-   cd Portfolio
+   git clone https://github.com/ashitajha10/ashitajha10.github.io.git
+   cd ashitajha10.github.io
    ```
 
 2. Install dependencies:
