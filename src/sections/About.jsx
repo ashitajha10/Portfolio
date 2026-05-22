@@ -18,11 +18,10 @@ function ProfileImage() {
     <img
       src={hasError ? 'https://ui-avatars.com/api/?name=Ashita+Jha&background=FADAE9&color=D8869E&size=400' : '/photo.jpg'}
       alt="Ashita Jha"
-      className={`w-full h-full object-cover object-center transition-transform duration-500 ${
-        hasError
-          ? 'scale-100 translate-x-0' // centered fallback avatar
-          : 'origin-center scale-[1.8] translate-x-4 hover:scale-[1.9]' // real photo crop
-      }`}
+      className={`w-full h-full object-cover object-center transition-transform duration-500 ${hasError
+        ? 'scale-100 translate-x-0' // centered fallback avatar
+        : 'origin-center scale-[1.8] translate-x-4 hover:scale-[1.9]' // real photo crop
+        }`}
       onError={() => setHasError(true)}
     />
   );
@@ -105,7 +104,7 @@ export default function About() {
             Beyond coding, I hold a junior diploma in Kathak, and dancing has always been one of my favorite creative outlets. When I’m not building projects or experimenting with new technologies, you’ll probably find me dancing my heart out, listening to music, exploring cute interface ideas, or obsessing over soft pastel color palettes ♡
           </p>
           <p className="font-nunito text-text-light dark:text-gray-300 leading-relaxed">
-            I’m someone who loves creating things — whether it’s software, interfaces, ideas, or moments — and I’m always curious, always learning, and always building something new ✿
+            I’m someone who loves creating things, whether it’s software, interfaces, ideas, or moments, and I’m always curious, always learning, and always building something new ✿
           </p>
           <p className="font-nunito text-text-light dark:text-gray-300 leading-relaxed">
             Currently open to internships, freelance opportunities, collaborations, and exciting projects where I can learn, create, and grow as a developer and ML enthusiast.
