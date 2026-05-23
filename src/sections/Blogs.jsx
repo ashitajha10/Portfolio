@@ -90,9 +90,9 @@ While having dozens of active tabs can slow down your system 🥲, it also mirro
     excerpt: 'Code, chaos, creativity, and way too many thoughts - that is basically me ✨ A little peek into who I am beyond the terminal, the commits, and the late-night debugging sessions ♡',
     content: `Hi, I’m Ashita ♡ - a little mix of code, chaos, creativity, and way too many thoughts ✨
 
-Ever since I was a child, I’ve always been that kid - the one constantly talking 🗣️, dancing around the house 💃, volunteering for stage performances 🎤, and somehow making friends everywhere I went ♡ Silence and I have never really been best friends ✨
+Ever since I was a child, I’ve always been that kid - the one constantly talking 🗣️, dancing around the house 💃, volunteering for stage performances 🎤, and somehow making friends everywhere I went ♡ Silence and I have never really been best friends 
 
-I grew up loving expression in every form possible 🎶 Whether it was dancing, speaking on stage, painting, music, storytelling, or simply being around people, I always found joy in creating energy and connection around me ✿
+I grew up loving expression in every form possible, Whether it was dancing, speaking on stage, painting, music, storytelling, or simply being around people, I always found joy in creating energy and connection around me ✿
 
 Dance especially became a huge part of who I am 💃 I hold a junior diploma in Kathak, and honestly, performing has always felt magical to me ✨ There’s something beautiful about rhythm, movement, storytelling, and emotion all coming together, and I think that love for creativity slowly found its way into the way I design and build things today too ♡
 
@@ -100,7 +100,7 @@ And then somewhere between school projects , curiosity, and pressing random butt
 
 At first, I didn’t even realize engineering was becoming my thing. I just knew I loved solving problems , understanding how systems worked, and creating things that felt meaningful ✨ The more I explored software development and machine learning, the more I realized: “wait… I actually really love this.” ♡
 
-Now I genuinely enjoy building projects , designing interfaces 🎀, debugging chaos at 2am ☕, and turning tiny ideas into real applications ✨
+Now I genuinely enjoy building projects , designing interfaces, debugging chaos at 2am, and turning tiny ideas into real applications ✨
 
 And yes, despite loving tech, I’m still very much an emotional, expressive, slightly chaotic human being ♡ I panic sometimes 😭 I overthink things. But I’ve also realized that being calm under pressure isn’t the only thing that matters - being adaptable, communicative, and willing to figure things out matters too ✨
 
