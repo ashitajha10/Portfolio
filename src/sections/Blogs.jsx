@@ -92,15 +92,15 @@ While having dozens of active tabs can slow down your system 🥲, it also mirro
 
 Ever since I was a child, I’ve always been that kid - the one constantly talking 🗣️, dancing around the house 💃, volunteering for stage performances 🎤, and somehow making friends everywhere I went ♡ Silence and I have never really been best friends ✨
 
-I grew up loving expression in every form possible 🎨🎶 Whether it was dancing, speaking on stage, painting, music, storytelling, or simply being around people, I always found joy in creating energy and connection around me ✿
+I grew up loving expression in every form possible 🎶 Whether it was dancing, speaking on stage, painting, music, storytelling, or simply being around people, I always found joy in creating energy and connection around me ✿
 
 Dance especially became a huge part of who I am 💃 I hold a junior diploma in Kathak, and honestly, performing has always felt magical to me ✨ There’s something beautiful about rhythm, movement, storytelling, and emotion all coming together, and I think that love for creativity slowly found its way into the way I design and build things today too ♡
 
-And then somewhere between school projects 📚, curiosity, and pressing random buttons on computers just to “see what happens,” I discovered technology 💻
+And then somewhere between school projects , curiosity, and pressing random buttons on computers just to “see what happens,” I discovered technology 💻
 
-At first, I didn’t even realize engineering was becoming my thing. I just knew I loved solving problems 🧠, understanding how systems worked, and creating things that felt meaningful ✨ The more I explored software development and machine learning, the more I realized: “wait… I actually really love this.” ♡
+At first, I didn’t even realize engineering was becoming my thing. I just knew I loved solving problems , understanding how systems worked, and creating things that felt meaningful ✨ The more I explored software development and machine learning, the more I realized: “wait… I actually really love this.” ♡
 
-Now I genuinely enjoy building projects 🚀, designing interfaces 🎀, debugging chaos at 2am ☕, and turning tiny ideas into real applications ✨
+Now I genuinely enjoy building projects , designing interfaces 🎀, debugging chaos at 2am ☕, and turning tiny ideas into real applications ✨
 
 And yes, despite loving tech, I’m still very much an emotional, expressive, slightly chaotic human being ♡ I panic sometimes 😭 I overthink things. But I’ve also realized that being calm under pressure isn’t the only thing that matters - being adaptable, communicative, and willing to figure things out matters too ✨
 
@@ -108,17 +108,17 @@ I think one of my biggest strengths is that I genuinely enjoy people 🫶
 
 I love conversations, stories, and understanding how different minds work ♡ One of the sweetest compliments I’ve received from people is that I carry a lot of warmth and love within me ✨ My family and friends mean everything to me, and I feel incredibly lucky to be surrounded by people who love, support, and care for me 💗 They’ve shaped so much of who I am and continue to remind me to stay grounded no matter where life takes me 🌸
 
-At the same time, I’m deeply rooted in culture and tradition ✿ I love creating Madhubani paintings 🎨, dancing to classical rhythms 💃, and carrying little pieces of tradition with me even while working in modern technology spaces 💻✨ And honestly, anyone who knows me knows just how obsessed I am with pretty kurtis and jhumkas ♡🌷
+At the same time, I’m deeply rooted in culture and tradition ✿ I love creating Madhubani paintings 🎨, dancing to classical rhythms 💃, and carrying little pieces of tradition with me even while working in modern technology spaces 💻 And honestly, anyone who knows me knows just how obsessed I am with pretty kurtis and jhumkas ♡🌷
 
 To me, art and engineering don’t oppose each other, they complete each other ✨
 
-Outside coding, you’ll usually find me listening to music like it’s emotional therapy 🎧, romanticizing life over sunsets and playlists 🌅✨, traveling and collecting tiny memories 🧳, redesigning interfaces for absolutely no reason 🎀, painting whenever inspiration randomly hits 🎨, or talking so much that people eventually ask me to breathe ♡
+Outside coding, you’ll usually find me listening to music like it’s emotional therapy 🎧, romanticizing life over sunsets and playlists 🌅✨, traveling and collecting tiny memories , redesigning interfaces for absolutely no reason , painting whenever inspiration randomly hits , or talking so much that people eventually ask me to breathe ♡
 
 I also absolutely love food 🍜 - both eating it and cooking for the people I love ♡ There’s something really comforting about sharing meals, trying new places, and making food for people who matter to me ✨ And if I’m being honest, momos might genuinely be my soulmate at this point 🥟💗
 
 I value art in all its forms because I think creativity makes life softer, warmer, and more human 🌸
 
-As for the future, I hope to build a meaningful career in software development 💻, create things that genuinely help people ♡, and continue growing into someone who can contribute positively to society ✨
+As for the future, I hope to build a meaningful career in software development , create things that genuinely help people ♡, and continue growing into someone who can contribute positively to society ✨
 
 But more than perfectly planned outcomes, I think I want a life full of exciting challenges 🚀, unexpected opportunities 🌷, beautiful surprises ✨, meaningful connections 🫶, and stories worth telling ♡
 
